@@ -29,3 +29,16 @@ def show_message(message: str):
 	print('-'*len(message))	
 	print(message)
 	print('-'*len(message))	
+
+def input_index(message: str):
+	return int(input(message))
+
+def input_search(message):
+	return input(message)	
+
+def change_contact(book: list[dict], index: int):
+	print('Введите новые денные или оставте пустое поле, если нет изменений')
+	contact = add_contact()
+	return{'name': contact.get('name') if contact.get('name') else book[index - 1].get('name'),
+			'phone': contact.get('phone') if contact.get('phone') else book[index - 1].get('phone'),
+			'comment': contact.get('comment') if contact.get('comment') else book[index - 1].get('comment')}
