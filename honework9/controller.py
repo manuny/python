@@ -8,7 +8,8 @@ def start():
 			case 1:
 				model.open_file()
 			case 2:
-				pass
+				model.save_file()
+				view.show_message('Файл успешно сохранен')
 			case 3:
 				pb = model.get_phone_book()
 				view.show_contacts(pb, 'Телефонная книга пуста или не открыта')

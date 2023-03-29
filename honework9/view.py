@@ -23,5 +23,9 @@ def add_contact() -> dict:
 	name = input('Введите имя: ')
 	phone = input('Введите номер телефона: ')	
 	comment = input('Введите комментарий: ')
-	return {'name': name, 'phone': phone, 'comment': comment}		
-	
+	return {'name': name, 'phone': phone, 'comment': comment}	
+
+def show_message(message: str):
+	print('-'*len(message))	
+	print(message)
+	print('-'*len(message))	

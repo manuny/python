@@ -16,3 +16,11 @@ def get_phone_book():
 
 def add_contact(contact: dict):
     phone_book.append(contact)
+
+def save_file():
+    data = []
+    for contact in phone_book:
+        data.append(';'.join(contact.values()))
+    data = '\n'.join(data)
+    with open(path,'w', encoding='UTF-8') as file:
+        file.write(data)
