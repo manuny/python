@@ -13,3 +13,6 @@ def open_file():
         
 def get_phone_book():
     return phone_book
+
+def add_contact(contact: dict):
+    phone_book.append(contact)

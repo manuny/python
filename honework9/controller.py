@@ -13,7 +13,7 @@ def start():
 				pb = model.get_phone_book()
 				view.show_contacts(pb, 'Телефонная книга пуста или не открыта')
 			case 4:
-				pass
+				model.add_contact(view.add_contact())
 			case 5:
 				pass
 			case 6:
